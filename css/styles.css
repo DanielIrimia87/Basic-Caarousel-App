@@ -20,6 +20,7 @@ body {
 
 .carousel .carousel-item-visible {
   display: block;
+  animation: fadeVisibility 0.5s;
 }
 
 .carousel-item img {
@@ -63,4 +64,13 @@ button:hover,
 button:focus {
   color: aquamarine;
   background: #cf838361;
+}
+
+@keyframes fadeVisibility {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
