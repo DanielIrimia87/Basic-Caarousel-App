@@ -36,10 +36,10 @@ function moveToNextSlide() {
 function moveToPrevSlide() {
   hideAllSlides();
 
-  if (slidePosition === totalSlides - 1) {
-    slidePosition = totalSlides - 2;
+  if (slidePosition === 0) {
+    slidePosition = totalSlides -1;
   } else {
-    slidePosition++;
+    slidePosition--;
   }
 
   slides[slidePosition].classList.add("carousel-item-visible");
