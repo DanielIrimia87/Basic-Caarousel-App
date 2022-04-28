@@ -1,11 +1,11 @@
 body {
-  font-family: 'Playfair Display SC', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Playfair Display SC", serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 15px;
-  background: #22577E;
-  color: rgb(255, 255, 255);
+  background: #22577e;
+  color: #41ded1;
 }
 
 * {
@@ -20,13 +20,24 @@ body {
 
 .autoplay {
   display: inline-flex;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  min-width: 64px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   color: #fff;
-  line-height: 2.8em;
-  padding: 0 1.6em;
-  border-radius: 22px;
+  background-color: #1976d2;
   cursor: pointer;
-  background-color: #0b69ed;
-  
+}
+
+.autoplay:hover,
+.autoplay:focus {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
 
 header {
@@ -36,7 +47,6 @@ header {
 h1,
 h2 {
   font-size: 30px;
-  color: #95D1CC;
   line-height: 38px;
   font-family: Playfair Display;
   font-weight: 900;
@@ -44,25 +54,28 @@ h2 {
 
 p {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
+  color: #f5ff6c;
+  text-align: justify;
+  margin-bottom: 0;
 }
 
 a {
-  color: #95D1CC;
+  color: #95d1cc;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover,
 a:focus {
-  color: #FAFFAF;
+  color: #c8d059;
 }
 
 .carousel {
   position: relative;
 }
 
-.carousel .carousel-item, 
+.carousel .carousel-item,
 .carousel .carousel-item-hidden {
   display: none;
 }
@@ -115,23 +128,26 @@ button:focus {
   background: #cf838361;
 }
 
-.container-item-current{
+.container-item-current {
   position: absolute;
-  top: 582px;
-  right: 0;
+  top: 564px;
+  right: 18px;
+  color: #22577e;
 }
-
-#current-slide {
-  color: #22577E;
-}
-  
 
 .container-footer {
   /* width: 100%;*/
-  color: #E3CAA5;
+  color: #d1fffb;
   text-align: center;
   font-size: 18px;
   padding: 1rem 2rem;
+}
+
+.footer-paragraph {
+    display: inline-block;
+    color: #d1fffb;
+    margin-top: 0;
+    margin-bottom: 2px;
 }
 
 .container-footer a {
@@ -141,9 +157,9 @@ button:focus {
 
 @keyframes fadeVisibility {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
