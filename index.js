@@ -1,5 +1,5 @@
-const log = (arg) => console.log(arg);
 /* log("index.js: loaded") // shorter version of  console.log  */
+const log = (arg) => console.log(arg);
 
 const slides = document.querySelectorAll(".carousel-item");
 let slidePosition = 0;
@@ -27,6 +27,7 @@ autoplayEl.addEventListener("click", function () {
     clearInterval(autoplay);
   }
 });
+
 
 currentSlide.textContent = slidePosition + 1;
 
