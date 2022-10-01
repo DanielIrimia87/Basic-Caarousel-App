@@ -1,3 +1,3 @@
 <!--
-        The base HTML structure for the carousel     
+        The base HTML structure for the carouse application      
 --> 
